@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Aaaa</p>
+		<canvas id="game" width="200" height="200"></canvas>
+		<script>
+			const c = document.getElementById("game");
+			const ctx = c.getContext("2d");
+			
+			class Point {
+				xVel = 0;
+				yVel = 0;
+				x = 5;
+				y = 10;
+				
+				Point(x, y) {
+					this.x = x;
+					this.y = y;
+				}
+				
+				changeVelocity(xC, yC) {
+					xVel += xC;
+					yVel += yC;
+				}
+				
+				move() {
+					x += xVel;
+					y += yVel;
+				}
+				
+				display(ctx) {
+					ctx.fillRect(this.x, this.y, 5, 5)
+					console.log(this.x);
+				}
+			}
+			
+			points = []
+			
+			for (i = 0; i < 10; i++) {
+				for (j = 0; j < 10; j++) {
+					points.push(new Point(i * 10, j * 10));
+				}
+			}
+			
+			
+			ctx.beginPath();
+			ctx.moveTo(0,0);
+			ctx.lineTo(100, 100);
+			ctx.lineTo(0,130);
+			ctx.fill();	
+			console.log("e");
+			
+			for (i = 0; i < points.length; i++) {
+				points[i].display(ctx);
+			}
+			
+			
+			
+			function update() {
+				
+				setTimeout(update, 10);
+			}
+			
+		</script>
+	</body>
+</html>
