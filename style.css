@@ -1,3 +1,52 @@
+
 h1 {
-	color: blue;
+	font-size: 400%;
+	text-decoration: line-through;
+	text-decoration-thickness: 28px;
+	text-decoration-color: blue
+}
+
+.up {
+/* 	text-decoration: underline;/*  */
+
+	text-decoration-thickness: 4px;
+	text-decoration-color: blue
+ */
+}
+
+.centered * {
+	text-align: center;
+	color: white;
+}
+
+.cursorA {cursor: alias;}
+.cursorB {cursor: all-scroll;}
+.cursorC {cursor: cell;}
+.cursorD {cursor: col-resize;}
+.cursorE {cursor: context-menu;}
+.cursorF {cursor: copy;}
+.cursorG {cursor: crosshair;}
+.cursorH {cursor: e-resize;}
+.cursorI {cursor: ew-resize;}
+.cursorJ {cursor: grab;}
+.cursorK {cursor: help;}
+.cursorL {cursor: move;}
+.cursorM {cursor: n-resize;}
+.cursorM {cursor: no-drop;}
+.cursorO {cursor: none;}
+.cursorP {cursor: not-allowed;}
+.cursorQ {cursor: progress;}
+.cursorR {cursor: zoom-in;}
+.cursorS {cursor: wait;}
+
+
+
+img {
+	width: 50%
+}
+
+
+
+html {
+	background-color: blue;
 }
